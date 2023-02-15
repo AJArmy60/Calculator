@@ -13,7 +13,7 @@ public class Calculator
         float prod = a * b;
         float div = a / b;
         System.out.println("Would you like to add add (1), subtract (2), multiply (3), or divide (4)?");
-        float c = input.nextFloat();
+        int c = input.nextInt();
         if (c == 1)
         {
             System.out.println(sum);
@@ -28,7 +28,14 @@ public class Calculator
         }
         else if (c == 4)
         {
-            System.out.println(div);
+            if (b == 0)
+            {
+                System.out.println("Error: Divide by Zero");
+            }
+            else 
+            {
+                System.out.println(div);
+            }    
         }
     }
 }
