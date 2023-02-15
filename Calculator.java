@@ -10,7 +10,9 @@ public class Calculator
         int b = input.nextInt();
         int sum = a + b;
         int diff = a - b;
-        System.out.println("Would you like to add add (1) or subtract (2) ?");
+        int prod = a * b;
+        int div = a / b;
+        System.out.println("Would you like to add add (1), subtract (2), multiply (3), or divide (4)?");
         int c = input.nextInt();
         if (c == 1)
         {
@@ -20,9 +22,13 @@ public class Calculator
         {
             System.out.println(diff);
         }
-        else
+        else if (c == 3)
         {
-
+            System.out.println(prod);
+        }
+        else if (c == 4)
+        {
+            System.out.println(div);
         }
     }
 }
