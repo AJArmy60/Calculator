@@ -6,14 +6,14 @@ public class Calculator
     {
         Scanner input = new Scanner(System.in);
         System.out.println("Please Enter two numbers.");
-        int a = input.nextInt();
-        int b = input.nextInt();
-        int sum = a + b;
-        int diff = a - b;
-        int prod = a * b;
-        int div = a / b;
+        float a = input.nextFloat();
+        float b = input.nextFloat();
+        float sum = a + b;
+        float diff = a - b;
+        float prod = a * b;
+        float div = a / b;
         System.out.println("Would you like to add add (1), subtract (2), multiply (3), or divide (4)?");
-        int c = input.nextInt();
+        float c = input.nextFloat();
         if (c == 1)
         {
             System.out.println(sum);
