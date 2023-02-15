@@ -9,6 +9,20 @@ public class Calculator
         int a = input.nextInt();
         int b = input.nextInt();
         int sum = a + b;
-        System.out.println("The sum is " + sum);
+        int diff = a - b;
+        System.out.println("Would you like to add add (1) or subtract (2) ?");
+        int c = input.nextInt();
+        if (c == 1)
+        {
+            System.out.println(sum);
+        }
+        else if (c == 2)
+        {
+            System.out.println(diff);
+        }
+        else
+        {
+
+        }
     }
 }
